@@ -10,9 +10,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-
-    
+    <main class="todoApp">
+        <div>
+            <h1>To do List</h1>
+            <form action="#" class="form">
+                <input type="text" id="inputTarefa" placeholder="New Item">
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div>
+            <ul id="taskList" class="taskList">
+                <li id="taskLi" class="taskLi">
+                    <i class="fa-sharp fa-solid fa-square-check" style="color: #0096ff;"></i>
+                    <input type="text" id="taskName" disabled value="Texto teste">
+                    <i class="fa-sharp fa-solid fa-pen-to-square" style="color: #0096ff;"></i>
+                    <i class="fa-solid fa-trash-can" style="color: #0096ff;"></i>
+                </li>
+            </ul>
+        </div>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
