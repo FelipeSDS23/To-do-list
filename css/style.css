@@ -1,0 +1,79 @@
+:root {
+    --form-color: #ff0000;
+    --icons-color: #0096ff;
+    --main-font: 'Ubuntu', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoApp {
+    background-color: var(--form-color);
+    padding: 20px 0;
+}
+
+/*Formulario*/
+.formDiv {
+    min-height: 130px;
+    width: 500px;
+    font-size: 1.3em;
+}
+.formDiv > h1 {
+    text-align: center;
+    margin: 30px 10px 10px 10px; 
+}
+.formDiv > .form > input {
+    height: 40px;
+    margin: 10px;
+    border: none;
+}
+.formDiv > .form > .inputTask {
+    width: 350px;
+    padding: 10px;
+}
+.formDiv > .form > .submitBtn {
+    width: 70px;
+    cursor: pointer;
+}
+.formDiv > .form {
+    display: flex;
+    justify-content: center;
+    margin: 10px; 
+}
+/*Fim Formulario*/
+
+/*Lista*/
+.listDiv {
+    min-width: 400px;
+    font-size: 1.3em;
+}
+.listDiv > .taskList {
+    list-style-type: none;
+}
+.listDiv > .taskList > .taskLi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 25px;
+}
+.listDiv > .taskList > .taskLi > .icon {
+    color: var(--icons-color);
+}
+.listDiv > .taskList > .taskLi > .taskName {
+    min-width: 350px;
+    padding: 10px;
+}
+/*Fim Lista*/

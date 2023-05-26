@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +10,31 @@
     <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main class="todoApp">
-        <div>
+        <div class="formDiv">
             <h1>To do List</h1>
             <form action="#" class="form">
-                <input type="text" id="inputTarefa" placeholder="New Item">
-                <input type="submit" value="Add">
+                <input type="text" id="inputTask" placeholder="New Item" class="inputTask">
+                <input type="submit" value="Add" class="submitBtn">
             </form>
         </div>
-        <div>
+        <div class="listDiv">
             <ul id="taskList" class="taskList">
+                <!--
                 <li id="taskLi" class="taskLi">
-                    <i class="fa-sharp fa-solid fa-square-check" style="color: #0096ff;"></i>
-                    <input type="text" id="taskName" disabled value="Texto teste">
-                    <i class="fa-sharp fa-solid fa-pen-to-square" style="color: #0096ff;"></i>
-                    <i class="fa-solid fa-trash-can" style="color: #0096ff;"></i>
+                ****<i class="fa-sharp fa-solid fa-square icon"></i>****
+                    <i class="fa-sharp fa-solid fa-square-check icon"></i>
+                    <input type="text" id="taskName" class="taskName" value="Texto teste" disabled>
+                    <i class="fa-sharp fa-solid fa-pen-to-square icon"></i>
+                    <i class="fa-solid fa-trash-can icon"></i>
                 </li>
+                -->
             </ul>
         </div>
     </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>
