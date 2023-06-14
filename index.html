@@ -16,7 +16,7 @@
         <div class="formDiv">
             <h1>To do List</h1>
             <form action="#" class="form" id="form">
-                <input type="text" id="inputTask" placeholder="New Item" class="inputTask">
+                <input type="text" id="inputTask" placeholder="New Item" class="inputTask" maxlength="35">
                 <input type="submit" value="Add" class="submitBtn" id="submitBtn">
             </form>
         </div>
@@ -24,9 +24,12 @@
             <ul id="taskList" class="taskList">
                 <!--
                 <li id="taskLi" class="taskLi">
-                ****<i class="fa-sharp fa-solid fa-square icon"></i>****
                     <i class="fa-sharp fa-solid fa-square-check icon"></i>
-                    <input type="text" id="taskName" class="taskName" value="Texto teste" disabled>
+                    <p id="taskName" class="taskName">Tarefa teste</p>
+                    <div class="editDiv">
+                        <input type="text" class="editInput" id="editInput">
+                        <i class="fa-solid fa-check icon"></i>
+                    </div>
                     <i class="fa-sharp fa-solid fa-pen-to-square icon"></i>
                     <i class="fa-solid fa-trash-can icon"></i>
                 </li>
